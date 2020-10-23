@@ -61,6 +61,8 @@ function adjustPage(){
 	if(tElmt!=null){tElmt.width=n;}
 	tElmt=document.getElementById("tbl2");
 	if(tElmt!=null){tElmt.width=n;}
+	tElmt=document.getElementById("hdr");
+	if(tElmt!=null){tElmt.innerText=tElmt.innerText+" "+n+"px";}
 	if(event.target.readyState=="complete"){
 		cElmts=document.getElementsByTagName("A");
 		for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));}
@@ -72,7 +74,7 @@ document.addEventListener('readystatechange', adjustPage);
 </head>
 <body>
 <table id=tbl1 class=s1>
-<tr><td align=center><span>App version: 0.0.1.7</span></td></tr>
+<tr><td align=center><span id=hdr>App version: 0.0.1.7</span></td></tr>
 </table>
 
 <table id=tbl2 bgcolor=black cellspacing=1 cellpadding=2 class=s2>
