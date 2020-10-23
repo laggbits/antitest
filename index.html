@@ -43,8 +43,10 @@ function getFileSize(url, tdElmt){
 	var r=new XMLHttpRequest();
 	r.open('HEAD',url,true);
 	r.onload=function(){
+		var i;
 		var s=r.getResponseHeader("Content-Length");
-		if(s!=null&&tdElmt!=null){tdElmt.innerText="["+parseInt(s)/1024+"KB]";}
+		if(tdElmt!=null&&s!=null){
+			tdElmt.innerText="["+Math.round((parseInt(s)/1024))+"KB]";}
 	}
 	r.send();
 }
