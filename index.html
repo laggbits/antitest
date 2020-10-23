@@ -48,21 +48,14 @@ function getFileSize(url, tdElmt){
 		if(tdElmt!=null&&s!=null){
 			i=Math.round(parseInt(s)/1024);
 			if(i<10){i=0;}
-			tdElmt.innerText="["+i+"KB]";
+			tdElmt.innerText=tdElmt.innerText+"["+i+"KB]";
 		}
 	}
 	r.send();
 }
 	
 function adjustPage(){
-	var n,tElmt,cElmts;
-	tElmt=document.getElementById("tbl1");
-	n=document.documentElement.clientWidth;
-	if(tElmt!=null){tElmt.width=n;}
-	tElmt=document.getElementById("tbl2");
-	if(tElmt!=null){tElmt.width=n;}
-	tElmt=document.getElementById("hdr");
-	if(tElmt!=null){tElmt.innerText=tElmt.innerText+" "+n+"px";}
+	var cElmts;
 	if(event.target.readyState=="complete"){
 		cElmts=document.getElementsByTagName("A");
 		for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));}
