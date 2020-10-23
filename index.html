@@ -56,7 +56,7 @@ function getFileSize(url, tdElmt){
 	
 function checkHeaders(){
 	var cElmts;
-	if(event.readyState=="complete"){
+	if(event.target.readyState=="complete"){
 		cElmts=document.getElementsByTagName("A");
 		for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));}
 	}
