@@ -48,7 +48,7 @@ for(i=0;i<cElmts.length;i++){
 	r=new XMLHttpRequest();
 	r.open('HEAD', s, true);
 	r.onload=function(){
-		alert(r.getResponceHeader('content-length'));
+		alert(r.getResponseHeader('content-length'));
 	};
 	r.send();
 }
