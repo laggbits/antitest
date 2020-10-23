@@ -44,17 +44,14 @@ function getFileSize(url, tdElmt){
 	r.open('HEAD',url,true);
 	r.onload=function(){
 		var s=r.getResponseHeader("Content-Length");
-		if(s!=null){tdElmt.setText("["+parseInt(s)/1024+"KB]");}
+		if(s!=null&&tdElmt!=null){tdElmt.setText("["+parseInt(s)/1024+"KB]");}
 	}
 	r.send();
 }
 	
 function checkHeaders(){
 var cElmts=document.getElementsByTagName("A");
-var td;
-for(i=0;i<cElmts.length;i++){
-	getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));
-}
+for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));}
 }
 </script>
 
