@@ -55,9 +55,12 @@ function getFileSize(url, tdElmt){
 }
 	
 function adjustPage(){
-	var cElmts;
-	var w=window.screen.width;
-	document.documentElement.clientWidth=w;
+	var n,tElmt,cElmts;
+	tElmt=document.getElementById("tbl1");
+	n=document.documentElement.clientWidth;
+	if(tElmt!=null){tElmt.width=n;}
+	tElmt=document.getElementById("tbl2");
+	if(tElmt!=null){tElmt.width=n;}
 	if(event.target.readyState=="complete"){
 		cElmts=document.getElementsByTagName("A");
 		for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));}
@@ -68,11 +71,11 @@ document.addEventListener('readystatechange', adjustPage);
 
 </head>
 <body>
-<table class=s1>
+<table id=tbl1 class=s1>
 <tr><td align=center><span>App version: 0.0.1.7</span></td></tr>
 </table>
 
-<table width=100% bgcolor=black cellspacing=1 cellpadding=2 class=s2>
+<table tbl2 bgcolor=black cellspacing=1 cellpadding=2 class=s2>
 <tr class=trs1>
 <td>
 <table class=s5><tr><td>
