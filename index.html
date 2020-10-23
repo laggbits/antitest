@@ -62,14 +62,16 @@ function getFileSize(url, tdElmt){
 	r.send();
 }
 	
-function checkHeaders(){
+function adjustPage(){
 	var cElmts;
+	var w=window.screen.width;
+	document.documentElement.clientWidth=w;
 	if(event.target.readyState=="complete"){
 		cElmts=document.getElementsByTagName("A");
 		for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById(cElmts[i].name));}
 	}
 }
-document.addEventListener('readystatechange', checkHeaders);
+document.addEventListener('readystatechange', adjustPage);
 </script>
 
 </head>
