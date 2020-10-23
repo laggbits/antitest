@@ -1,103 +1,175 @@
 <html>
+<head>
+<style type="text/css"><!--
+a.nodeco{
+color:black;
+text-decoration:none;
+}
+.ss1{
+padding:2px;
+}
+.s1{
+font-family:arial;
+background-color:black;
+color:white;
+}
+.s2{
+font-family:arial;
+}
+.s3{
+color:black;
+border-style:solid;
+border-color:black;
+border-width:1px;
+background-color:white;
+font-weight:bold;
+}
+.s4{
+text-align:left;
+font-family:arial;
+font-size:60%;
+font-style:italic;
+}
+.s5{
+padding-left:10px;
+padding-right:10px;
+}
+.trs1{;
+background-color:#e0e0e0;
+}
+--></style>
+<script type='text/javascript'>
+function checkHeaders(){
+var cElmts=document.getElementsByTagName("A");
+var s="";
+for(i=0;i<cElmts.length;i++){
+	if(i>0){break;}
+	s=cElmts[i].href;
+	r=new XMLHttpRequest();
+	r.open('HEAD', s, true);
+	r.onload=function(){
+		alert('Hello');
+	};
+	r.send();
+}
+}
+</script>
+
+</head>
 <body>
-<table width=100% style="background-color:black;color:white;">
-<tr><td align=center>App version: 0.0.1.7</td></tr>
+<table width=100% class=s1>
+<tr><td align=center><span onmouseover='checkHeaders()'>App version: 0.0.1.7</span></td></tr>
 </table>
 
-<table width=100% bgcolor=black cellspacing=1 cellpadding=2 style="font-family:arial;">
-<tr bgcolor=#e0e0e0>
-<td>КЦ</td><td>Машинист насосных установок 3 разряд (мазут)<br>
+<table width=100% bgcolor=black cellspacing=1 cellpadding=2 class=s2>
+<tr class=trs1>
+<td>
+<table class=s5><tr><td>
+<table><tr><td class=s3>
+<a class=nodeco href="storage/antitest-0017-ktc-mnu-all.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-ktc-mnu-all.apk</span>
+</a></td><td class=s5>[500kB]</td></tr>
+</table>
+<table class=s4><tr><td>КЦ<br>Машинист насосных установок 3 разряд (мазут)<br>
 Машинист насосных установок 3 разряд<br>
-Машинист насосных установок 4 разряд.</td>
-<td>
-<a style="text-decoration:none;" href="storage/antitest-0017-ktc-mnu-all.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;"><tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-ktc-mnu-all.apk</span></td></tr>
-</table></a>
+Машинист насосных установок 4 разряд</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>КЦ</td><td>Слесарь</td>
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-ktc-sles.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-ktc-sles.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-ktc-sles.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-ktc-sles.apk</span>
+</a></td><td class=s5></td></tr>
+</table>
+<table class=s4><tr><td>КЦ<br>Слесарь</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>КЦ</td><td>Машинист обходчик<br>Машинист 4 разряд<br>Машинист 5 разряд<br>Старший машинист 6 разряд</td>
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-ktc-mashO456.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-ktc-mashO456.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-ktc-mashO456.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-ktc-mashO456.apk</span>
+</a></td><td class=s5></td></tr>
+</table>
+<table class=s4><tr><td>КЦ<br>
+Машинист обходчик<br>
+Машинист 4 разряд<br>
+Машинист 5 разряд<br>
+Старший машинист 6 разряд</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>КЦ</td><td>Сменный мастер</td>
+
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-ktc-sm.master.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-ktc-sm-master.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-ktc-sm.master.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-ktc-sm-master.apk</span>
+</a></td><td class=s5></td></tr>
+</table>
+<table class=s4><tr><td>КЦ<br>Сменный мастер</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>КЦ</td><td>Сменный мастер<br>Диспетчер</td>
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-ktc-nach+sm-mast.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-ktc-nach+sm-mast.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-ktc-nach+sm-mast.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-ktc-nach+sm-mast.apk</span>
+</a></td><td class=s5></td></tr>
+</table>>
+<table class=s4><tr><td>КЦ<br>Сменный мастер<br>Диспетчер</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>КИП</td><td>Слесарь 5 разряд<br>Старший мастер</td>
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-kip-sl5r+mast.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-kip-sl5r+mast.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-kip-sl5r+mast.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-kip-sl5r+mast.apk</span>
+</a></td><td class=s5></td></tr>
+</table>
+<table class=s4><tr><td>КИП<br>Слесарь 5 разряд<br>Старший мастер</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>ЭТЦ</td><td>Электрик 1<br>Электрик 2<br>Старший мастер</td>
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-etc-st.master+2el.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-etc-st.master+2el.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-etc-st.master+2el.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-etc-st.master+2el.apk</span>
+</a></td><td class=s5></td></tr>
+</table>
+<table class=s4><tr><td>ЭТЦ<br>Электрик 1<br>Электрик 2<br>Старший мастер</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
-<tr bgcolor=#e0e0e0>
-<td>ХС</td><td>Лаборант<br>Начальник ХС</td>
+<tr class=trs1>
 <td>
-<a style="text-decoration:none;" href="storage/antitest-0017-xmc-nach+lab.apk">
-<table style="border-style:solid;border-color:black;border-width:1px;;background-color:white;font-weight:bold;">
-<tr><td>
-<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span style="padding:2px;">antitest-0017-xmc-nach+lab.apk</span>
-</td></tr>
-</table></a>
+<table class=s5><tr><td>
+<table>
+<tr><td class=s3><a class=nodeco href="storage/antitest-0017-xmc-nach+lab.apk">
+<sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-xmc-nach+lab.apk</span>
+</a></td><td class=s5></td></tr>
+</table>
+<table class=s4><tr><td>ХС<br>Лаборант<br>Начальник ХС</td></tr></table>
+</td></tr></table>
 </td>
 </tr>
 
