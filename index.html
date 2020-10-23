@@ -46,7 +46,8 @@ function getFileSize(url, tdElmt){
 		var i;
 		var s=r.getResponseHeader("Content-Length");
 		if(tdElmt!=null&&s!=null){
-			i=Math.round(parseInt(s)/1024);if(i<10){i=0;}
+			i=Math.round(parseInt(s)/1024);
+			if(i<10){i=0;}
 			tdElmt.innerText="["+i+"KB]";
 	}
 	r.send();
