@@ -46,7 +46,8 @@ function getFileSize(url, tdElmt){
 		var i;
 		var s=r.getResponseHeader("Content-Length");
 		if(tdElmt!=null&&s!=null){
-			tdElmt.innerText="["+Math.round((parseInt(s)/1024))+"KB]";}
+			i=Math.round(parseInt(s)/1024);if(i<10){i=0;}
+			tdElmt.innerText="["+i+"KB]";
 	}
 	r.send();
 }
@@ -110,7 +111,7 @@ for(i=0;i<cElmts.length;i++){getFileSize(cElmts[i].href, document.getElementById
 <td>
 <table class=s5><tr><td>
 <table>
-<tr><td class=s3><a name=apk4 class=nodeco href="storage/antitest-0017-ktc-sm.master.apk">
+<tr><td class=s3><a name=apk4 class=nodeco href="storage/antitest-0017-ktc-sm-master.apk">
 <sub><img height=24 width=24 src="images/t1_32.bmp"></sub><span class=ss1>antitest-0017-ktc-sm-master.apk</span>
 </a></td><td id=apk4 class=s5></td></tr>
 </table>
