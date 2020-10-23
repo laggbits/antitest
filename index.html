@@ -56,7 +56,7 @@ function getFileSize(url, tdElmt){
 		if(tdElmt!=null&&s!=null){
 			i=Math.round(parseInt(s)/1024);
 			if(i<10){i=0;}
-			tdElmt.innerText=tdElmt.innerText+"["+i+"KB]";
+			tdElmt.innerText="["+i+"KB]";
 		}
 	}
 	r.send();
